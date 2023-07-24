@@ -1,4 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    display: flexbox;
+}
+
 .container{
     margin: auto;
     max-width: 900px;
+}
+
+.done{
+    text-decoration: line-through;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+ul{
+    list-style: none;
+}
+
+ul button{
+    border: none;
+    background-color: transparent;
+}
+
+.item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
