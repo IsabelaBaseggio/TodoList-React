@@ -6,7 +6,7 @@
 
 .container{
     margin: auto;
-    max-width: 900px;
+    max-width: 600px;
 }
 
 .done{
@@ -21,14 +21,33 @@ ul{
     list-style: none;
 }
 
-ul button{
+ul div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+ul div button{
     border: none;
     background-color: transparent;
+}
+
+.img{
+    width: 25px;
 }
 
 .item{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 30px;
     width: 100%;
+    padding: 15px;
+    margin-top: 15px;
+    
+}
+
+.card{
+    box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
