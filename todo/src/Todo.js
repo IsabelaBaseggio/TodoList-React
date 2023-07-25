@@ -13,10 +13,15 @@ function Todo(){
     const [items, setItems] = useState([]);
 
     useEffect(() => {
-        let savedItems = JSON.parse(localStorage.getItem(SAVED_ITEMS));
+        let localStorageItems = localStorage.getItem(SAVED_ITEMS);;
+        let savedItems = JSON.parse(localStorageItems);
 
         if(savedItems){
-            setItems(savedItems);
+            setItems(savedItems)
+        }
+
+        return ()=>{
+            localStorage.setItem(SAVED_ITEMS, localStorageItems);
         }
     }, []);
 
