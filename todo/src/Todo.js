@@ -59,7 +59,7 @@ function Todo(){
 
 
     return (<div className="container">
-                <header className="header"><h1>Todo</h1><button onClick={()=>{
+                <header className="header"><h1>To do list</h1><button onClick={()=>{
                     setShowModal(true)
                 }} className="addButton">+</button></header>
 
